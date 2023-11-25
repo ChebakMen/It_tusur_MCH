@@ -66,6 +66,7 @@ function clean() {     //нужно для отчистки
             sort: "desktop-first"
           })
         ])
+        
       )
       .pipe(gulp.dest("dist/styles"))
       .pipe(minify())
