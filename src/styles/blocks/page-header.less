@@ -22,16 +22,9 @@
     }
 
     &__conteiner{
+        .container();
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        box-sizing: border-box;
-        margin: 0 auto;
-        position: relative;
-        padding-left: 40px;
-        padding-right: 40px;
-        max-width: 1414px;
-        width: 100%;
     }
 
     &__logo{
@@ -52,5 +45,30 @@
         line-height: 25px;
         text-decoration: none;
     }
+
+    &__nav-link:hover {
+        color: #bc3324;
+    }
+
+    &__right-block {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 202px;
+    }
+
+    &__user-btn{
+        box-sizing: border-box;
+        background-color: transparent ;
+        text-decoration: none;
+        padding: 15px 40px;
+        border: 1px solid #1f1e1e;
+        font-size: 16px;
+        line-height: normal;
+        font-weight: 600;
+        color: #1f1e1e;
+    }
+
+    
 }
 
