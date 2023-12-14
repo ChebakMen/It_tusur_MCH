@@ -2,6 +2,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
     height: 147px;
     z-index: 100;
@@ -15,35 +16,56 @@
         width: 100%;
         height: 100%;
         background-color: rgba(222,222,222,0.5);
-        @supports (backdrop-filter: blur(10px)){
+        
+    }
+
+    @supports (backdrop-filter: blur(10px)){
+        &::before {
             backdrop-filter: blur(10px);
-            background-color: rgba(222,222,222,0.5);
+            background-color: rgba(222, 222, 222, 0.50);
         }
     }
 
-    &__conteiner{
+    &__container{
         .container();
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        position: relative;
     }
 
     &__logo{
-        display: inline-block;
+        flex-shrink: 0;
         width: 202px;
         height: 147px;
+        font-size: 0;
+        text-decoration: none;
+    }
+    &__logo-icon{
+        width: 100%;
+        height: 100%;
+    }
+
+    &__logo-img {
+        width: 100%;
+        height: 100%;
     }
 
     &__nav{
-        display: inline-block;
+        display: flex;
+        align-items: baseline;
+        margin: 0 auto;
     }
 
     &__nav-link{
-        color: #000;
         margin: 0 25px;
+        color: #1f1e1e;
         font-weight: 600;
         font-size: 18px;
+        font-family: @font1;
         line-height: 25px;
         text-decoration: none;
+        transition: color 0.2s;
     }
 
     &__nav-link:hover {
