@@ -1,0 +1,87 @@
+// #tringl-right-top{
+    
+//     width: 0;
+//     height: -40;
+//     border-bottom: 60px solid @white;
+//     border-right: 40vw solid transparent;
+
+//     &::before {
+//         content: "";
+//         border-image: url(../assets/images/noise.png) ;
+//     }    
+// }
+
+
+// #tringl-left-top{
+    
+//     width: 0;
+//     height: -40;
+//     border-bottom: 60px solid @white;
+//     border-left: 60vw solid transparent;
+
+// }
+
+// .tringle{
+//     margin-top: 91px;
+//     display: flex;
+//     justify-content: space-between;
+//     flex-direction: row;
+//     max-width: 1920px;
+//     width: 100%;
+    
+// }
+
+.bgc{
+    max-width: 1920px;
+    width: 100%;
+    height: 1236px;
+    // background-image: url(../assets/images/noise.png);
+    background-image: url(../assets/images/events.png);
+    margin-bottom: 64px;
+}
+
+.upcoming{
+    flex-direction: column;
+    display: flex;
+    
+    
+    &__container{
+        .container;
+        
+        margin-top: 128px;
+        margin-bottom: 100px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__link{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 70px;
+        
+        &-btn{
+            align-self: end;
+            width: 109px;
+            height: 22px;
+            padding: 15px 0 15px 40px;
+        }
+
+    }
+
+    &__link-icons{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 122px;
+        // flex-shrink: 0;
+        
+        width: 525px;
+        height: 60px;
+       
+    }
+}

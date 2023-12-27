@@ -1,0 +1,71 @@
+<section class="upcoming @@class">
+    <!-- <div class="tringle">
+        <div id="tringl-right-top"></div>
+        <div id="tringl-left-top"></div>
+    </div> -->
+    <div class="bgc">
+        <div class="upcoming__container">
+            <h2 class="upcoming__title section-title">Мероприятия</h2>
+            <div class="upcoming__wrapper">
+                <div class="listing__events-list">
+                    @@loop('event-card.html', [
+                      {
+                          "class": "listing__event-card",
+                          "img": "assets/images/nirvana.png",
+                          "alt": "nirvana",
+                          "title": "Собираемся и слушаем альбом Nirvana",
+                          "descr": "Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.",
+                          "time": "07.12.2022 | начало 18.00",
+                          "datetime": "2022-12-07T18:00"
+                      },
+                      {
+                          "class": "listing__event-card",
+                          "img": "assets/images/stuff.png",
+                          "alt": "stuff",
+                          "title": "Есть тема, нужно обсудить с HowStuffWorks",
+                          "descr": "Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.",
+                          "time": "14.12.2022 | начало 18.30",
+                          "datetime": "2022-12-14T18:30"
+                      },
+                      {
+                          "class": "listing__event-card",
+                          "img": "assets/images/sade.png",
+                          "alt": "sade",
+                          "title": "Вечер | The Best of Sade",
+                          "descr": "Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-блюза и фанка.",
+                          "time": "16.12.2022 | начало 20.00",
+                          "datetime": "2022-12-16T20:00"
+                      }
+                    ])
+                </div>
+                <div class="upcoming__link">
+                    <div class="upcoming__link-icons">
+                        <a href="#" class="about__link link">
+                            <svg class="link__icon " 
+                                width = "92" 
+                                height = "60">
+                                <use xlink:href = "assets/icons/symbols.svg#link-left">
+                            </svg>
+                        </a>
+                            <svg class="link__icon" 
+                                width = "99" 
+                                height = "2">
+                                <use xlink:href = "assets/icons/symbols.svg#scrol">
+                            </svg>
+                        <a href="#" class="about__link link">
+                            <svg class="link__icon" 
+                                width = "91" 
+                                height = "60">
+                                <use xlink:href = "assets/icons/symbols.svg#link">
+                            </svg>
+                        </a>
+                    </div>
+                    <a href="#" class="link__name link upcoming__link-btn">
+                        Смотреть все
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>

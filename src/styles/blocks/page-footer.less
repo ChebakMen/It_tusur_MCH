@@ -124,16 +124,33 @@
     &__social {
         display: flex;
         flex-direction: row;
+        gap: 44px;
+        
+        &-icon{
+            color: @white;
+            display: flex;
+            
+        }
+        
     }
     
     &__link {
-        display: block;
+        width: 58px;
+        height: 58px;
+        background-color: @black;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        border-radius: 50%;
         transition: color 0.2s;
         &:last-child {
             margin: 0;
         }
-        &:hover {
-            color: @red_dark;
+        // от себя
+        &:hover{ 
+            @media (hover:hover){
+                background-color: @red;
+            }
         }
     }
 

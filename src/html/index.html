@@ -26,12 +26,18 @@
                     </p>
                 </header>
                 
+                <!-- Я хочу -->
                 @@include('blocks/offers.html',{"class": "home__offers"})
+                <!-- О нас-->
                 @@include('blocks/about.html',{class: 'home__about'})
-                <section class="upcoming home__upcoming"></section>
+                <!-- Мероприятия -->
+                @@include('blocks/upcoming.html',{class: 'home__upcoming'})
+                <!-- Блог -->
                 @@include('blocks/blog-listing.html', {"class": "home__listing"})
+                <!-- Контакты -->
                 @@include('blocks/contacts.html',{class: 'home__contacts'})
                 
+                <!-- Надпись -->
                 @@include('blocks/doit.html',{class: 'home__doit'})
             </div>
         </main>
