@@ -1,8 +1,29 @@
 .check{
+    
+    
     box-sizing: border-box;
     position: relative;
     padding-left: 40px;
     display: block;
+
+    
+    &--red {
+        color: @red;
+        .check__mark {
+        border-color: @red;
+        }
+        .check__input {
+            &:checked {
+                & ~ .check__mark {
+                    background-color: @red;
+                }
+            }
+        }
+    }
+    &--disabled {
+        pointer-events: none;
+        opacity: 0.5;
+    }
 
     &__input{
 
@@ -40,8 +61,18 @@
     }
 
     &__label{
-        font-size: 14px;
-        color: @black;
+        margin-left: 15px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
 
+        &--s{
+            line-height: 19;
+            font-size: 14px;
+        }
+
+        &--red{
+            color: @red;
+        }
     }
 }

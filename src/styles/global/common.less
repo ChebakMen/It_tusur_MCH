@@ -66,3 +66,53 @@ img {
     height: auto;
     object-fit: cover;
 }
+
+textarea,
+input,
+button,
+select{
+    box-shadow: none;
+    outline: none;
+    color: @black;
+    font-family: @font1;
+}
+
+button{
+    cursor: pointer;
+}
+
+input,
+textarea{
+    &::-webkit-input-placeholder{
+        color: @black;
+    }
+    &::-moz-placeholder{
+        color: @black;
+    }
+    &:-moz-placeholder{
+        color: @black;
+    }
+    &:-ms-input-placeholder{
+        color: @black;
+    }
+}
+
+input:focus,
+textarea:focus{
+    &::-webkit-input-placeholder{
+        color: transparent;
+    }
+    &::-moz-placeholder{
+        color: transparent;
+    }
+    &:-moz-placeholder{
+        color :transparent;
+    }
+    &:-ms-input-placeholder{
+        color: transparent;
+    }
+}
+
+textarea{
+    resize: none;
+}
